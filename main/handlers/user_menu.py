@@ -21,7 +21,7 @@ else:
 async def start_command(message: Message):
     if image:
         await message.answer("Привет! Это бот для поиска и сравнения фотографий. Напиши мне /search и выбери нужные критерии.")
-        await message.answer_photo(photo=image)
+        await message.reply_photo(photo=image)
     else:
         await message.answer("Привет!К сожалению изображение отсутсвует")
 
