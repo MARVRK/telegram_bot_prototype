@@ -1,7 +1,7 @@
 from aiogram.types.inline_keyboard_button import InlineKeyboardButton
 
 button_init = InlineKeyboardButton
-async def create_search_keyboard():
+def create_search_keyboard():
 	return [
         [
             button_init(text="Изображения", callback_data="image"),
